@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./built",
+    "allowJs": true,
+    "target": "es5",
+    "baseUrl": ".",
+    "rootDir": "src/",
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "paths": {
+      "src/*": [
+        "./src/*"
+      ],
+    }
+  },
+  "include": ["src/**/*.ts"],
+}
