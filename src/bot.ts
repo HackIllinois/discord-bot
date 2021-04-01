@@ -19,7 +19,8 @@ const client: Client = new Client();
 client.once('ready', async () => {
   console.log('Ready');
 });
-
+const APIKEY =
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3R1c2VyMUBnbWFpbC5jb20iLCJleHAiOjE2MjU4MjUyNDEsImlkIjoiVEVTVDEgZ2l0aHViMTkwMjM4MTIzIiwicm9sZXMiOlsiVXNlciIsIkFwcGxpY2FudCIsIkF0dGVuZGVlIl19.Ethvq5VsLFukI3TehZdTkuHHZiybqXNBxOiP04XwOjI';
 // on message listener
 client.on('message', async (message: Message) => {
   // if the message was by bot or isn't a command, exit
