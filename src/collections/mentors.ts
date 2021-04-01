@@ -1,5 +1,5 @@
 import { Collection, User } from 'discord.js';
 
-const mentors = []
+const mentors = new Set()
 
 export default mentors

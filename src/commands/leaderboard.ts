@@ -8,13 +8,13 @@ const command: Command = {
   description: 'Shows hackillinois point leaderboard',
   guildOnly: true,
   usage: '[leaderboard]',
+  aliases: ['lb'],
   roles: ['Admin'],
   execute(message: Message, args: string[]) {
-    fetch('https://api.hackillinois.org/profile/leaderboard/?limit=10', {
+    fetch('https://api.hackillinois.org/profile/leaderboard/?limit=8', {
       headers: {
         'Content-Type': 'application/json',
-        Authorization:
-          API_KEY
+        Authorization: API_KEY
       }
     })
       .then((response) => {

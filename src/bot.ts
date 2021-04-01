@@ -25,7 +25,7 @@ client.on('message', async (message: Message) => {
   // if the message was by bot or isn't a command, exit
   if (message.author.bot) return;
   mentorReact(message);
-  sendEventNotification(client);
+  sendEventNotification(client, message.guild);
   if (!message.content.startsWith(config.prefix)) return;
   // parse the message string
   const args: string[] = message.content.slice(config.prefix.length).trim().split(/ +/);
