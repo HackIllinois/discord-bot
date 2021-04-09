@@ -21,7 +21,7 @@ client.once('ready', async () => {
   setInterval(() => {
     console.log('Sending Event Notifications!');
     sendEventNotification(client);
-  }, 1000 * 60);
+  }, 1000 * 60 * 15);
 });
 
 // on message listener
