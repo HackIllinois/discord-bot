@@ -13,7 +13,7 @@ const command: Command = {
     const data = [];
 
     if (!args.length) {
-      data.push('Dizzy Commands:');
+      data.push('Commands:');
       data.push(commands.map((command) => command.name).join(' | '));
       data.push(`\nUse \`${config.prefix}help [command]\` for more info!`);
 
@@ -32,7 +32,7 @@ const command: Command = {
       commands.get(name) || commands.find((c) => c.aliases && c.aliases.includes(name));
 
     if (!command) {
-      return message.reply('Dizzy Command not found :(');
+      return message.reply('Command not found :(');
     }
 
     data.push(`**Command:** ${command.name}`);
